@@ -70,28 +70,20 @@ body {
 }
 
 /* Animación del carrusel */
-#carrusel .proyecto {
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s;
+#carouselProyectos .carousel-item img {
+    height: 500px;
+    object-fit: cover;
 }
 
-#carrusel .proyecto:hover {
-    transform: scale(1.05);
+.carousel-caption h5 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-#carrusel .proyecto-info {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    width: 100%;
-    padding: 10px;
-    display: none;
-}
-
-#carrusel .proyecto:hover .proyecto-info {
-    display: block;
+.carousel-caption p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 /* Estilos para las cartas de los proyectos */
@@ -169,11 +161,15 @@ body {
 }
 
 .icono-lenguaje img {
-    max-width: 80%;
-    max-height: 80%;
-    object-fit: cover;
+    height: 100px;
+    width: auto;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+    transition: transform 0.3s ease;
 }
 
+.icono-lenguaje img:hover {
+    transform: scale(1.1);
+}
 h5 {
     font-size: 1rem;
     margin-top: 5px;

@@ -11,32 +11,146 @@
 </head>
 <body>
     <!-- Sección de Inicio -->
-    <section id="inicio" class="d-flex justify-content-center align-items-center vh-100 bg-dark text-white">
-        <div class="text-center">
-            <h1 class="animate-typewriter" data-aos="fade-down">Hola, soy Luciano Gastón Barros, Desarrollador Backend</h1>
-            <div class="mt-4">
-                <a href="./PDF/Luciano Gaston Barros CV.pdf" class="btn btn-primary">Descargar CV</a>
-                <a href="#contacto" class="btn btn-secondary">Contáctame</a>
+<section id="inicio" class="vh-100 bg-dark text-white">
+    <div class="container d-flex justify-content-center align-items-center h-100 flex-column text-center">
+        <!-- Título -->
+        <h1 class="mb-4" data-aos="fade-down">Hola, soy Luciano Gastón Barros, Desarrollador Backend</h1>
+        
+        <!-- Carrusel de Proyectos -->
+        <div id="carouselProyectos" class="carousel slide w-75" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="2"></button>
             </div>
-        </div>
-    </section>
-
-    <!-- Sección de Conocimientos -->
-    <section id="conocimientos" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4" data-aos="fade-up">Mis Conocimientos Técnicos</h2>
-            <div class="row text-center" data-aos="fade-up">
-                <!-- Ejemplo de conocimiento -->
-                <div class="col-md-3 mb-3">
-                    <div class="icono-lenguaje mb-2">
-                        <img src="./imagenes/JavaScript.png" alt="JavaScript" class="img-fluid">
+            <div class="carousel-inner">
+                <!-- Primer Proyecto -->
+                <div class="carousel-item active">
+                    <img src="./imagenes/SGPM_login.jpg" class="d-block w-100" alt="Proyecto 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Proyecto 1</h5>
+                        <p><a href="#proyectos">Ver Mas</a></p>
                     </div>
-                    <h5 data-aos="fade-up">JavaScript</h5>
                 </div>
-                <!-- Repetir para más conocimientos -->
+                <!-- Segundo Proyecto -->
+                <div class="carousel-item">
+                    <img src="./imagenes/proyecto2.jpg" class="d-block w-100" alt="Proyecto 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Proyecto 2</h5>
+                        <p>Descripción breve del proyecto 2.</p>
+                    </div>
+                </div>
+                <!-- Tercer Proyecto -->
+                <div class="carousel-item">
+                    <img src="./imagenes/proyecto3.jpg" class="d-block w-100" alt="Proyecto 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Proyecto 3</h5>
+                        <p>Descripción breve del proyecto 3.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyectos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProyectos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        
+        <!-- Botones -->
+        <div class="mt-4">
+            <a href="./PDF/Luciano Gaston Barros CV.pdf" class="btn btn-primary">Descargar CV</a>
+            <a href="#contacto" class="btn btn-secondary">Contáctame</a>
+        </div>
+    </div>
+</section>
+
+   <!-- Sección de Conocimientos -->
+<section id="conocimientos" class="py-5 bg-dark text-white">
+    <div class="container">
+        <h2 class="text-center mb-4" data-aos="fade-up">Mis Conocimientos Técnicos</h2>
+        <div class="row">
+            <!-- Columna Frontend -->
+            <div class="col-md-6">
+                <h3 class="text-center mb-4" data-aos="fade-up">Frontend</h3>
+                <div class="row text-center">
+                    <!-- JavaScript -->
+                    <div class="col-md-6 mb-4">
+                        <div class="icono-lenguaje">
+                            <img src="./imagenes/JavaScript.png" alt="JavaScript">
+                        </div>
+                        <h5>JavaScript</h5>
+                    </div>
+                    <!-- HTML -->
+                    <div class="col-md-6 mb-4">
+                        <div class="icono-lenguaje">
+                            <img src="./imagenes/html5-logo-2.png" alt="HTML">
+                        </div>
+                        <h5>HTML</h5>
+                    </div>
+                    <!-- CSS -->
+                    <div class="col-md-6 mb-4">
+                        <div class="icono-lenguaje">
+                            <img src="./imagenes/css-3-logo.png" alt="CSS">
+                        </div>
+                        <h5>CSS</h5>
+                    </div>
+                    <!-- AJAX -->
+                    <div class="col-md-6 mb-4">
+                        <div class="icono-lenguaje">
+                            <img src="./imagenes/ajax-1.jpg" alt="AJAX">
+                        </div>
+                        <h5>AJAX</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna Backend -->
+            <div class="col-md-6">
+                <h3 class="text-center mb-4" data-aos="fade-up">Backend</h3>
+                <div class="row text-center">
+                    <!-- PHP -->
+                    <div class="col-md-6 mb-4">
+                        <div class="icono-lenguaje">
+                            <img src="./imagenes/php_PNG43.png" alt="PHP">
+                        </div>
+                        <h5>PHP</h5>
+                    </div>
+                    <!-- MySQL -->
+                    <div class="col-md-6 mb-4">
+                        <div class="icono-lenguaje">
+                            <img src="./imagenes/mysql_PNG22.png" alt="MySQL">
+                        </div>
+                        <h5>MySQL</h5>
+                    </div>
+                    <!-- phpMyAdmin -->
+                    <div class="col-md-6 mb-4">
+                        <div class="icono-lenguaje">
+                            <img src="./imagenes/phpmyadmin-logo-0.png" alt="phpMyAdmin">
+                        </div>
+                        <h5>phpMyAdmin</h5>
+                    </div>
+                    <!-- MariaDB -->
+                    <div class="col-md-6 mb-4">
+                        <div class="icono-lenguaje">
+                            <img src="./imagenes/mariadb-1024.png" alt="MariaDB">
+                        </div>
+                        <h5>MariaDB</h5>
+                    </div>
+                    <!-- Python -->
+                    <div class="col-md-6 mb-4">
+                        <div class="icono-lenguaje">
+                            <img src="./imagenes/python-logo.png" alt="Python">
+                        </div>
+                        <h5>Python</h5>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Sección de Proyectos -->
 <section id="proyectos" class="py-5 bg-light">
